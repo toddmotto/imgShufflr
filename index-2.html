@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>imgShufflr by @toddmotto | toddmotto.com</title>
+	<meta name="author" content="@toddmotto">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/imgshufflr.js"></script>
+	
+	<script>
+	$(function() {
+		$('#imgShufflr').imgShufflr({
+			imgType  : 'background', // inline or background
+			imgs     : ["image-1.jpg","image-2.jpg","image-3.jpg","image-4.jpg"], // Image array
+			imgPath  : 'img/shuffle/', // Image directory
+		});
+	});
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="http://www.toddmotto.com">
+				<img src="img/logo.png" alt="Logo">
+			</a>
+		</div>
+		<div id="view-tut">
+			<ul>
+				<li><a href="#">Visit the Tutorial</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<div id="main">
+		
+			<div class="toggler">
+				<a href="index.html">Inline imgShufflr</a>
+				<a href="index-2.html">Background imgShufflr</a>
+			</div>
+		
+			<div class="polaroid">
+				<div id="imgShufflr"></div>
+				<h1>Background imgShufflr</h1> 
+			</div>
+			
+			<div>
+				<a href="#" class="reload">Reshuffle images</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<style>
+		#imgShufflr {height:250px;width:250px;border:1px solid #CCC;}
+		
+		.polaroid {background:#FFF;padding:10px;box-shadow:0 1px 6px #000;border-radius:1px;display:inline-block;}
+		.polaroid h1 {color:#555;font-size:13px;font-style:italic;padding:10px 0 0 0;}
+		
+		.toggler {text-align:center;margin:0 0 50px;}
+		.toggler a {display:inline-block;padding:5px 10px;font-weight:900;background:#04A4CC;color:#FFF;border-radius:20px;}
+		
+		.reload {background:#FFF;border-radius:20px;padding:5px 10px;font-weight:900;display:inline-block;color:#333;margin:20px 0 0 0;}
+	</style>
+	
+	<!-- Styles (Demo only) -->
+	<style>
+		* {margin:0;padding:0;}
+		a img {border:none;}
+		a {text-decoration:none;}
+		body {font:400 12px/1.625 "Helvetica Neue", Helvetica, Arial, sans-serif;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;
+		-o-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility;color:#444;background:url(img/dark_geometric.png);}
+		.wrapper {max-width:1000px;width:95%;margin:0 auto;position:relative;}
+		#header {overflow:auto;background:#33363C;border-top:5px solid #2F3135;border-bottom:2px solid #04A4CC;}
+		#logo {float:left;margin:10px 50px 5px;}
+		#logo img {width:80px;height:36px;}
+		#view-tut {float:right;font-size:13px;font-weight:900;margin:10px 50px 5px;}
+		#view-tut ul {margin:0;}
+		#view-tut ul li {display:inline-block;*display:inline;zoom:1;margin:0 5px 0 0;}
+		#view-tut ul li a {display:block;padding:5px 10px;background:#04A4CC;color:#FFF;border-radius:20px;}
+		#view-tut ul li a:hover {background:#0097CD;}
+		#main {margin:50px auto;text-align:center;}
+		#main p {padding:0;margin:10px 0 0;}
+		#main .calling {background:#FFF;color:#222;padding:15px 20px;display:inline-block;border-radius:6px;box-shadow:0 1px 3px #000;}
+		#main .calling a {display:inline-block;background:#333;color:#FFF;padding:10px 20px;margin:5px;border-radius:4px;}
+	</style>
+	
+	<!-- Analytics (Demo only) -->
+	<script>
+		var _gaq=[['_setAccount','UA-20440416-10'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+	
+	<!-- Influads Script (Demo only) -->
+	<script src="http://www.toddmotto.com/influads/custom.js"></script>
+	
+	<script>
+	$('.reload').click(function() {
+		location.reload();
+		return false;
+	});
+	</script>
+	
+</body>
+</html>
